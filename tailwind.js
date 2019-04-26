@@ -566,6 +566,7 @@ module.exports = {
   */
 
   maxWidth: {
+    '2xs': '10rem',
     'xs': '20rem',
     'sm': '30rem',
     'md': '40rem',
@@ -623,6 +624,8 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '12': '3rem',
+    '24': '6rem',  
   },
 
 
@@ -651,6 +654,9 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '10': '2.5rem',
+    '12': '3rem',
+    '16': '4rem',
   },
 
 
