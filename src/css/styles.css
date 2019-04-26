@@ -2,6 +2,14 @@
 
 @tailwind components;
 
+button:focus {
+	@apply outline-none;
+}
+
+body {
+	@apply font-sans;
+}
+
 /** custom dropdown elements **/
 
 .dropdown label {

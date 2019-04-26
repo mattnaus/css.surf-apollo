@@ -46,6 +46,9 @@ View the full documentation at https://tailwindcss.com.
 let colors = {
   transparent: 'transparent',
   white: 'HSLA(109, 100%, 100%, 1.00)',
+  'white-trans-10': 'HSLA(109, 100%, 100%, 0.10)',
+  'white-trans-20': 'HSLA(109, 100%, 100%, 0.20)',
+  'white-trans-60': 'HSLA(109, 100%, 100%, 0.60)',
 
   'primary-darkest': 'hsla(184, 90%, 17%, 1.00)',
   'primary-darker': 'hsla(185, 81%, 29%, 1.00)',
@@ -161,6 +164,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Raleway',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -226,6 +230,8 @@ module.exports = {
     '3xl': '1.875rem',  // 30px
     '4xl': '2.25rem',   // 36px
     '5xl': '3rem',      // 48px
+    '6xl': '3.5rem',
+    '7xl': '4.5rem'
   },
 
 
