@@ -7,7 +7,7 @@ button:focus {
 }
 
 body {
-	@apply font-sans text-grey-darker leading-normal text-sm;
+	@apply font-sans text-grey leading-normal text-sm;
 }
 
 /** custom dropdown elements **/
