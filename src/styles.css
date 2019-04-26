@@ -2,4 +2,25 @@
 
 @tailwind components;
 
+/** custom dropdown elements **/
+
+.dropdown label {
+    cursor: pointer;
+}
+
+.dropdown input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.dropdown ul {
+    display: none;
+}
+
+.dropdown input:checked ~ ul {
+    display: block;
+}
+
+/**  end custom dropdown elements **/
+
 @tailwind utilities;
