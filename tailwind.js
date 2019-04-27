@@ -49,6 +49,7 @@ let colors = {
   'white-trans-10': 'HSLA(109, 100%, 100%, 0.10)',
   'white-trans-20': 'HSLA(109, 100%, 100%, 0.20)',
   'white-trans-60': 'HSLA(109, 100%, 100%, 0.60)',
+  'white-trans-90': 'HSLA(109, 100%, 100%, 0.90)',
 
   'primary-darkest': 'hsla(184, 90%, 17%, 1.00)',
   'primary-darker': 'hsla(185, 81%, 29%, 1.00)',
@@ -901,8 +902,8 @@ module.exports = {
         tl: 'to top left'
       },
       gradients: {
-        primary: [colors['primary'], colors['primary-light']],
-        secondary: [colors['secondary'], 'HSLA(320, 75%, 57%, 1.00)'],
+        primary: [colors['primary'], colors['primary-dark']],
+        secondary: [colors['secondary'], colors['secondary-dark']],
         grey: [colors['grey-dark'], colors['grey']],
         red: [colors['red'], colors['red-light']],
         green: [colors['green'], colors['green-light']],
