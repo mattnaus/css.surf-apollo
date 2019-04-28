@@ -1,5 +1,15 @@
 require('./css/styles.css');
 require('../node_modules/animate.css/animate.min.css');
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Gumshoe from 'gumshoejs';
+import SmoothScroll from 'smooth-scroll';
+
+AOS.init();
+
+let spy = new Gumshoe('#navList a');
+let scroll = new SmoothScroll('#navList a[href*="#"]');
+
 
 require('./js/navbar.js');
 

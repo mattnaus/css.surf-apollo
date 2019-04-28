@@ -10,26 +10,37 @@
 
 		<div id="sideNav" class="sidenav h-full w-0 fixed z-50 bg-gradient-t-primary pin-t pin-r overflow-hidden py-12 shadow-inner flex flex-col justify-between">
 
-			<div class="px-6">
+			<ul class="px-6 list-reset" id="navList">
 
-				<a href="#" class="text-sm md:text-base pb-4 border-b border-primary text-white block no-underline font-semibold mb-4 tracking-wide relative">
-					<span class="w-2 h-2 bg-secondary rounded-full inline-block mr-2"></span>
-					About
-				</a>
-				<a href="#" class="text-sm md:text-base pb-4 border-b border-primary text-grey-lightest hover:text-white block no-underline font-semibold mb-4 tracking-wide">
-					<span class="w-2 h-2 bg-grey-lightest rounded-full inline-block mr-2"></span>
-					Services
-				</a>
-				<a href="#" class="text-sm md:text-base pb-4 border-b border-primary text-grey-lightest hover:text-white block no-underline font-semibold mb-4 tracking-wide">
-					<span class="w-2 h-2 bg-grey-lightest rounded-full inline-block mr-2"></span>
-					Clients
-				</a>
-				<a href="#" class="text-sm md:text-base pb-4 border-b border-primary text-grey-lightest hover:text-white block no-underline font-semibold mb-4 tracking-wide">
-					<span class="w-2 h-2 bg-grey-lightest rounded-full inline-block mr-2"></span>
-					Contact
-				</a>
+				<li>
+					<a href="#cover" data-scroll><span></span>Cover</a>
+				</li>
 
-			</div>
+				<li>
+					<a href="#about" data-scroll><span></span>About</a>
+				</li>
+				
+				<li>
+					<a href="#features" data-scroll><span></span>Features</a>
+				</li>
+
+				<li>
+					<a href="#testimonials" data-scroll><span></span>Testimonials</a>
+				</li>
+
+				<li>
+					<a href="#pricing" data-scroll><span></span>Pricing</a>
+				</li>
+
+				<li>
+					<a href="#subscribe" data-scroll><span></span>Subscribe</a>
+				</li>
+				
+				<li>
+					<a href="#"><span></span>Contact</a>
+				</li>
+
+			</ul>
 
 			<div class="px-6">
 
@@ -76,7 +87,7 @@
 
 					<div class="flex flex-col items-start container mx-auto">
 
-						<div class="lg:w-1/2 px-12 py-12 mx-4 bg-white-trans-10 rounded-lg border border-white-trans-20 shadow-md">
+						<div class="lg:w-1/2 px-12 py-12 mx-4 bg-white-trans-10 rounded-lg border border-white-trans-20 shadow-md" data-aos="fade-right">
 
 							<h1 class="text-2xl font-black tracking-wide text-white no-underline text-primary mb-4 leading-tight">Apollo</h1>
 								
@@ -106,13 +117,13 @@
 
 			<section class="py-24 px-6 bg-white" id="about">
 
-				<h2 class="text-center font-extrabold text-3xl text-secondary-darkest max-w-lg mx-auto mb-10">Apollo is a simple, but extremely powerful one-page template to get you started</h2>
+				<h2 class="text-center font-extrabold text-3xl text-secondary-darkest max-w-lg mx-auto mb-10" data-aos="slide-left">Apollo is a simple, but extremely powerful one-page template to get you started</h2>
 
-				<p class="text-center text-lg max-w-lg mx-auto leading-loose mb-10">
+				<p class="text-center text-lg max-w-lg mx-auto leading-loose mb-10" data-aos="slide-right">
 					Pellentesque eget nisl sit amet odio maximus porta sit amet id odio. Aliquam placerat turpis vitae orci semper molestie. Duis vitae tellus a urna sodales fringilla id a nunc. Maecenas mattis tempus molestie. Cras in ipsum sed mi pulvinar consequat ut sit amet mauris.
 				</p>
 
-				<div class="flex flex-col items-center md:flex-row md:justify-center md:items-center mb-16">
+				<div class="flex flex-col items-center md:flex-row md:justify-center md:items-center mb-16" data-aos="slide-left">
 
 					<button class="text-white border-2 border-primary bg-primary px-8 py-3 rounded-full hover:bg-transparent hover:text-primary-darker tracking-wide font-medium mb-4 md:mb-0 md:mr-4 shadow hover:shadow-none">Join us today</button>
 					<button class="text-primary-darker border-2 border-primary px-8 py-3 rounded-full hover:bg-primary hover:text-white tracking-wide font-medium">Learn more</button>
@@ -175,7 +186,7 @@
 
 			</section>
 
-			<section class="py-24 px-6 bg-grey-lightest border-t border-grey-lighter">
+			<section class="py-24 px-6 bg-grey-lightest border-t border-grey-lighter" id="features">
 
 				<div class="container mx-auto lg:flex items-center">
 
@@ -258,6 +269,28 @@
 					</div>
 
 				</div>
+
+			</section>
+
+			<section class="lg:flex bg-grey-darker">
+
+				<div class="lg:w-1/2 lg:flex lg:flex-col lg:justify-center lg:items-end lg:px-18 p-12">
+
+					<div class="lg:max-w-sm">
+
+						<h4 class="text-2xl font-bold text-white mb-8">Coded by space monkeys</h4>
+
+						<hr class="border-b-2 border-primary-light w-12 m-0 mb-8">
+
+						<p class="text-base text-grey-lighter leading-medium">
+							Donec sit amet laoreet odio. In vehicula, diam sed porta auctor, est ante tincidunt neque, id finibus purus metus sed tortor. Donec eros nibh, volutpat ac nisi vitae, lacinia commodo nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+						</p>
+
+					</div>
+
+				</div>
+
+				<div class="lg:w-1/2 lg:flex-none min-h-screen-50 lg:min-h-screen-75 bg-cover" style="background-image: url('<%= require('./images/austin-distel-1517505-unsplash.jpg') %>')"></div>
 
 			</section>
 

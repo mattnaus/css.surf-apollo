@@ -27,6 +27,11 @@
         "webpack-dev-server": "^3.1.1"
     },
     "dependencies": {
-        "animate.css": "^3.7.0"
+        "animate.css": "^3.7.0",
+        "aos": "^2.3.4",
+        "gumshoejs": "^5.1.1",
+        "install": "^0.12.2",
+        "npm": "^6.9.0",
+        "smooth-scroll": "^16.0.3"
     }
 }

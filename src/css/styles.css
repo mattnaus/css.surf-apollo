@@ -33,21 +33,36 @@ body {
 
 
 
+/**  sideNav stuff  **/
+
+#sideNav ul a {
+	@apply text-sm pb-4 border-b border-white-trans-20 text-grey-lighter block no-underline font-semibold mb-4 tracking-wide;
+}
+
+#sideNav ul a span {
+	@apply w-2 h-2 border-2 border-grey-lighter rounded-full inline-block mr-2;
+}
+
+#sideNav ul li.active span {
+	@apply border-white bg-white;
+}
+
+#sideNav ul li.active, #sideNav ul li:hover {
+	@apply text-white;
+}
+
+@screen md {
+ 	#sideNav nav a {
+    	@apply text-base
+  	}
+}
+
 .sidenav {
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 .sidenav.navOpen {
 	width: 250px;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -68,5 +83,7 @@ body {
 		width: 175px;
 	}
 }
+
+/** end sideNav stuff **/
 
 @tailwind utilities;
