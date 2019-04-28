@@ -47,8 +47,8 @@ body {
 	@apply border-white bg-white;
 }
 
-#sideNav ul li.active, #sideNav ul li:hover {
-	@apply text-white;
+#sideNav ul li.active a, #sideNav ul li:hover a {
+	@apply text-white font-bold;
 }
 
 @screen md {
