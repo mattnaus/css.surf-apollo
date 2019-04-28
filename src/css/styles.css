@@ -31,4 +31,42 @@ body {
 
 /**  end custom dropdown elements **/
 
+
+
+.sidenav {
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav.navOpen {
+	width: 250px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#page {
+  transition: margin-right .5s;
+}
+
+#page.navOpen {
+	margin-right: 250px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 576px) {
+  	#page.navOpen {
+		margin-right: 0px;
+	}
+	.sidenav.navOpen {
+		width: 175px;
+	}
+}
+
 @tailwind utilities;

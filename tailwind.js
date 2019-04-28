@@ -445,6 +445,7 @@ module.exports = {
   width: {
     'auto': 'auto',
     'px': '1px',
+    '0': '0px',
     '1': '0.25rem',
     '2': '0.5rem',
     '3': '0.75rem',
@@ -572,6 +573,7 @@ module.exports = {
   */
 
   maxWidth: {
+    '3xs': '5rem',
     '2xs': '10rem',
     'xs': '20rem',
     'sm': '30rem',
@@ -836,7 +838,7 @@ module.exports = {
     borderStyle: ['responsive'],
     borderWidths: ['responsive'],
     cursor: ['responsive'],
-    display: ['responsive'],
+    display: ['responsive', 'hover'],
     flexbox: ['responsive'],
     float: ['responsive'],
     fonts: ['responsive'],

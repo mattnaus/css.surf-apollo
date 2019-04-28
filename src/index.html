@@ -7,547 +7,587 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900" rel="stylesheet">
 	</head>
 	<body>
-		
-		<section class="relative h-screen bg-cover z-10" style="background-image: url('<%= require('./images/134758.jpg') %>');" id="cover">
 
-			<div class="absolute pin-x pin-y" style="z-index: -1; background-color: rgba(0, 0, 0, 0.55)"></div>
+		<div id="sideNav" class="sidenav h-full w-0 fixed z-50 bg-gradient-t-primary pin-t pin-r overflow-hidden py-12 shadow-inner flex flex-col justify-between">
 
-			<div class="h-screen flex flex-col justify-between">
+			<div class="px-6">
 
-				<div class="border-b border-white-trans-20 bg-white-trans-10">
-					
-	                <nav class="p-3" data-gp-component="navbar">
-	                    <div class="container mx-auto lg:flex relative">
-	                        <div class="text-grey-darker lg:w-1/4 flex items-center flex-no-shrink">
-	                            <a href="" class="text-2xl font-black tracking-wide text-white no-underline text-primary-lighter">Apollo</a>
-	                        </div>
-	                        <div class="lg:px-4 flex-grow lg:flex hidden items-center" data-collapse>
-	                            <ul class="lg:flex-grow text-sm lg:flex lg:justify-end list-reset pt-6 lg:pt-0">
-	                                <li class="block lg:inline-block lg:mt-0 mt-4 mr-8">
-	                                    <a href="" class="block lg:inline text-white text-xs no-underline uppercase tracking-wide">Features</a>
-	                                </li>
-	                                <li class="block lg:inline-block lg:mt-0 mt-4 mr-8">
-	                                    <a href="" class="block lg:inline text-white text-xs no-underline uppercase tracking-wide">Use Cases</a>
-	                                </li>
-	                                <li class="block lg:inline-block lg:mt-0 mt-4 mr-8">
-	                                    <a href="" class="block lg:inline text-white text-xs no-underline uppercase tracking-wide">Pricing</a>
-	                                </li>
-	                                <li class="block lg:inline-block lg:mt-0 mt-4 mr-8">
-	                                    <a href="" class="block lg:inline text-white text-xs no-underline uppercase tracking-wide">Components</a>
-	                                </li>
-	                                <li class="block lg:inline-block lg:mt-0 mt-4">
-	                                    <a href="" class="block lg:inline text-white text-xs no-underline uppercase tracking-wide">Contact</a>
-	                                </li>
-	                            </ul>
-	                        </div>
-	                        <button class="lg:hidden flex items-center px-3 py-2 border-2 rounded-lg text-white border-white absolute pin-r pin-t" data-menu-toggle>
-	                            <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-	                        </button>
-	                    </div>
-	                </nav>
+				<a href="#" class="text-sm md:text-base text-white block no-underline font-medium mb-4 tracking-wide relative navLink">
+					<span class="w-2 h-2 bg-secondary-dark rounded-full inline-block"></span>
+					About
+				</a>
+				<a href="#" class="text-sm md:text-base text-grey-lightest hover:text-white block no-underline font-medium mb-4 tracking-wide navLink">
+					<span class="w-2 h-2 bg-secondary-dark rounded-full hidden"></span>
+					Services
+				</a>
+				<a href="#" class="text-sm md:text-base text-grey-lightest hover:text-white block no-underline font-medium mb-4 tracking-wide navLink">
+					<span class="w-2 h-2 bg-secondary-dark rounded-full hidden"></span>
+					Clients
+				</a>
+				<a href="#" class="text-sm md:text-base text-grey-lightest hover:text-white block no-underline font-medium mb-4 tracking-wide navLink">
+					<span class="w-2 h-2 bg-secondary-dark rounded-full hiddenk"></span>
+					Contact
+				</a>
 
-				</div>
+				<hr class="border-b-2 border-primary-dark mx-auto mt-8">
 
-				<div class="flex flex-col items-center">
-						
-					<h1 class="text-5xl sm:text-6xl md:text-7xl text-white font-black mb-8 animated fadeIn text-center">get creative.</h1>
+			</div>
 
-					<button class="text-white border-2 border-white px-8 py-3 rounded-full hover:bg-white hover:text-primary-darkest tracking-wide font-medium">Learn more</button>
+			<div class="px-6">
 
-				</div>
+				<p class="text-grey-lightest text-xs text-center mb-2">
+					we are social
+				</p>
 
 				<div class="flex justify-center">
+					<a href="">
+						<svg class="w-4 h-4 text-grey-lightest mr-2 hover:text-white" viewBox="0 0 24 24"><g fill="currentColor"><path fill="currentColor" d="M12,0C5.4,0,0,5.4,0,12c0,5.1,3.2,9.4,7.6,11.2c-0.1-0.9-0.2-2.4,0-3.4c0.2-0.9,1.4-6,1.4-6S8.7,13,8.7,12 c0-1.7,1-2.9,2.2-2.9c1,0,1.5,0.8,1.5,1.7c0,1-0.7,2.6-1,4c-0.3,1.2,0.6,2.2,1.8,2.2c2.1,0,3.8-2.2,3.8-5.5c0-2.9-2.1-4.9-5-4.9 c-3.4,0-5.4,2.6-5.4,5.2c0,1,0.4,2.1,0.9,2.7c0.1,0.1,0.1,0.2,0.1,0.3c-0.1,0.4-0.3,1.2-0.3,1.4c-0.1,0.2-0.2,0.3-0.4,0.2 c-1.5-0.7-2.4-2.9-2.4-4.6c0-3.8,2.8-7.3,7.9-7.3c4.2,0,7.4,3,7.4,6.9c0,4.1-2.6,7.5-6.2,7.5c-1.2,0-2.4-0.6-2.8-1.4 c0,0-0.6,2.3-0.7,2.9c-0.3,1-1,2.3-1.5,3.1C9.6,23.8,10.8,24,12,24c6.6,0,12-5.4,12-12C24,5.4,18.6,0,12,0z"></path></g></svg>
+					</a>
 
-					<button class="text-white-trans-90 stroke-current mb-4 animated fadeInDown infinite slower">
-						<svg viewBox="0 0 32 32" width="32" height="32"><title>direction down</title><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="currentColor" stroke="currentColor"><polygon fill="none" stroke="currentColor" stroke-miterlimit="10" points="16,30 27,18 20,18 20,7 12,7 12,18 5,18 "></polygon> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="20" y1="2" x2="12" y2="2"></line></g></svg>
+					<a href="">
+						<svg class="w-4 h-4 text-grey-lightest mr-2 hover:text-white" viewBox="0 0 24 24"><g fill="currentColor"><path fill="currentColor" d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"></path></g></svg>
+					</a>
+
+					<a href="">
+						<svg class="w-4 h-4 text-grey-lightest mr-2 hover:text-white" viewBox="0 0 24 24"><g fill="currentColor"><path fill="currentColor" d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"></path></g></svg>
+					</a>
+
+					<a href="">
+						<svg class="w-4 h-4 text-grey-lightest hover:text-white" viewBox="0 0 24 24"><g fill="currentColor"><path fill="currentColor" d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.366,0.062,2.633,0.336,3.608,1.311 c0.975,0.975,1.249,2.242,1.311,3.608c0.058,1.265,0.07,1.645,0.07,4.849s-0.012,3.584-0.07,4.849 c-0.062,1.366-0.336,2.633-1.311,3.608c-0.975,0.975-2.242,1.249-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07 s-3.584-0.012-4.849-0.07c-1.366-0.062-2.633-0.336-3.608-1.311c-0.975-0.975-1.249-2.242-1.311-3.608 c-0.058-1.265-0.07-1.645-0.07-4.849s0.012-3.584,0.07-4.849c0.062-1.366,0.336-2.633,1.311-3.608 c0.975-0.975,2.242-1.249,3.608-1.311C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072 c-1.95,0.089-3.663,0.567-5.038,1.942C0.639,3.389,0.161,5.102,0.072,7.052C0.014,8.332,0,8.741,0,12 c0,3.259,0.014,3.668,0.072,4.948c0.089,1.95,0.567,3.663,1.942,5.038c1.375,1.375,3.088,1.853,5.038,1.942 C8.332,23.986,8.741,24,12,24s3.668-0.014,4.948-0.072c1.95-0.089,3.663-0.567,5.038-1.942c1.375-1.375,1.853-3.088,1.942-5.038 C23.986,15.668,24,15.259,24,12s-0.014-3.668-0.072-4.948c-0.089-1.95-0.567-3.663-1.942-5.038 c-1.375-1.375-3.088-1.853-5.038-1.942C15.668,0.014,15.259,0,12,0L12,0z"></path> <path data-color="color-2" d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162S8.597,18.162,12,18.162s6.162-2.759,6.162-6.162 S15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z"></path> <circle data-color="color-2" cx="18.406" cy="5.594" r="1.44"></circle></g></svg>
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<button class="fixed bg-primary text-white p-2 z-50 w-8 h-8 shadow rounded" style="top: 10px; right: 10px;" id="menuToggle">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" transform="translate(0.5 0.5)" fill="currentColor" stroke="currentColor"><g class="nc-interact_menu-close-2-o-32"> <path fill="none" stroke="currentColor" stroke-miterlimit="10" d="M2 6h28" transform="translate(0 0.00) rotate(0.00 16 6)"></path> <path data-color="color-2" fill="none" stroke-miterlimit="10" d="M2 16h28" opacity="1"></path> <path fill="none" stroke="currentColor" stroke-miterlimit="10" d="M2 26h28" transform="translate(0 0) rotate(0 16 26)"></path> </g> 
+				<script>!function(){function t(e){var i=e.parentNode;if("svg"!==i.tagName)i=t(i);return i;}function e(t,e,i,n){return 1>(t/=n/2)?i/2*t*t*t*t+e:-i/2*((t-=2)*t*t*t-2)+e}function i(t){this.element=t,this.topLine=this.element.getElementsByTagName("path")[0],this.centerLine=this.element.getElementsByTagName("path")[1],this.bottomLine=this.element.getElementsByTagName("path")[2],this.time={start:null,total:250},this.status={interacted:!1,animating:!1},this.init()}if(!window.requestAnimationFrame){var n=null;window.requestAnimationFrame=function(t,e){var i=(new Date).getTime();n||(n=i);var a=Math.max(0,16-(i-n)),s=window.setTimeout(function(){t(i+a)},a);return n=i+a,s}}i.prototype.init=function(){var t=this;this.element.addEventListener("click",function(){t.status.animating||(t.status.animating=!0,window.requestAnimationFrame(t.triggerAnimation.bind(t)))})},i.prototype.triggerAnimation=function(t){var e=this.getProgress(t),i=this.status.interacted?this.time.total-e:e;this.animateIcon(i),this.checkProgress(e)},i.prototype.getProgress=function(t){return this.time.start||(this.time.start=t),t-this.time.start},i.prototype.checkProgress=function(t){var e=this;this.time.total>t?window.requestAnimationFrame(e.triggerAnimation.bind(e)):(this.status={interacted:!this.status.interacted,animating:!1},this.time.start=null)},i.prototype.animateIcon=function(t){if(t>this.time.total)(t=this.time.total);if(0>t)(t=0);var i=e(Math.min(t,this.time.total/2),0,10,this.time.total/2).toFixed(2),n=e(Math.max(t-this.time.total/2,0),0,45,this.time.total/2).toFixed(2);this.topLine.setAttribute("transform","translate(0 "+i+") rotate("+n+" 16 6)"),this.bottomLine.setAttribute("transform","translate(0 "+-i+") rotate("+-n+" 16 26)");var a=t>this.time.total/2?0:1;this.centerLine.setAttribute("opacity",a)};var a=document.getElementsByClassName("nc-interact_menu-close-2-o-32");if(a)for(var s=0;a.length>s;s++)new i(t(a[s]))}();
+				</script>
+			</g></svg>
+		</button>
+
+		<div id="page">
+		
+			<section class="relative h-screen bg-cover z-10" style="background-image: url('<%= require('./images/134758.jpg') %>');" id="cover">
+
+				<div class="absolute pin-x pin-y" style="z-index: -1; background-color: rgba(0, 0, 0, 0.55)"></div>
+
+				<div class="h-screen flex flex-col justify-center">
+
+					<div class="flex flex-col items-start container mx-auto">
+
+						<div class="lg:w-1/2 px-12 py-12 mx-4 bg-white-trans-10 rounded-lg border border-white-trans-20 shadow-md">
+
+							<h1 class="text-2xl font-black tracking-wide text-white no-underline text-primary mb-4 leading-tight">Apollo</h1>
+								
+							<h2 class="text-4xl sm:text-5xl md:text-6xl text-white font-black mb-4 leading-tight">get creative.</h2>
+
+							<p class="text-white text-lg md:text-xl leading-medium mb-8">
+								Use the Apollo template to put a professional landing page online within minutes
+							</p>
+
+							<button class="text-white border-2 border-white px-8 py-3 rounded-full hover:bg-white hover:text-primary-darkest tracking-wide font-medium">Learn more</button>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="absolute pin-b pin-l pin-r flex justify-center">
+
+					<button class="text-white-trans-90 stroke-current animated fadeInDown infinite slower">
+						<svg viewBox="0 0 32 32" width="32" height="32"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="currentColor" stroke="currentColor"><polygon fill="none" stroke="currentColor" stroke-miterlimit="10" points="16,30 27,18 20,18 20,7 12,7 12,18 5,18 "></polygon> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="20" y1="2" x2="12" y2="2"></line></g></svg>
 					</button>
 					
 				</div>
 
-			</div>
+			</section>
 
-		</section>
+			<section class="py-24 px-6 bg-white" id="about">
 
-		<section class="py-24 px-6 bg-white" id="about">
+				<h2 class="text-center font-extrabold text-3xl text-secondary-darkest max-w-lg mx-auto mb-10">Apollo is a simple, but extremely powerful one-page template to get you started</h2>
 
-			<h2 class="text-center font-extrabold text-3xl text-secondary-darkest max-w-lg mx-auto mb-10">Apollo is a simple, but extremely powerful one-page template to get you started</h2>
+				<p class="text-center text-lg max-w-lg mx-auto leading-loose mb-10">
+					Pellentesque eget nisl sit amet odio maximus porta sit amet id odio. Aliquam placerat turpis vitae orci semper molestie. Duis vitae tellus a urna sodales fringilla id a nunc. Maecenas mattis tempus molestie. Cras in ipsum sed mi pulvinar consequat ut sit amet mauris.
+				</p>
 
-			<p class="text-center text-lg max-w-lg mx-auto leading-loose mb-10">
-				Pellentesque eget nisl sit amet odio maximus porta sit amet id odio. Aliquam placerat turpis vitae orci semper molestie. Duis vitae tellus a urna sodales fringilla id a nunc. Maecenas mattis tempus molestie. Cras in ipsum sed mi pulvinar consequat ut sit amet mauris.
-			</p>
+				<div class="flex flex-col items-center md:flex-row md:justify-center md:items-center mb-16">
 
-			<div class="flex flex-col items-center md:flex-row md:justify-center md:items-center mb-16">
-
-				<button class="text-white border-2 border-primary bg-primary px-8 py-3 rounded-full hover:bg-transparent hover:text-primary-darker tracking-wide font-medium mb-4 md:mb-0 md:mr-4 shadow hover:shadow-none">Join us today</button>
-				<button class="text-primary-darker border-2 border-primary px-8 py-3 rounded-full hover:bg-primary hover:text-white tracking-wide font-medium">Learn more</button>
-
-			</div>
-
-			<hr class="border-b-4 border-secondary max-w-2xs mx-auto mb-16">
-
-			<div class="container mx-auto lg:flex lg:justify-between p-">
-
-				<div class="p-6 lg:w-1/3 rounded-lg border border-grey-lighter mb-8 lg:mb-0 lg:mr-8 text-center">
-					
-					<svg class="w-20 h-20 text-primary mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" transform="translate(0.5 0.5)" fill="currentColor" stroke=""><path d="M32.066,40.272C29.935,43.826,27.108,46,24,46c-6.627,0-12-9.85-12-22S17.373,2,24,2s12,9.85,12,22a39.686,39.686,0,0,1-.3,4.821" fill="none" stroke="currentColor" stroke-miterlimit="10"></path><circle cx="24" cy="24" r="4" fill="none" stroke-miterlimit="10" data-color="color-2"></circle><path d="M7.728,15.934C4.174,18.065,2,20.892,2,24c0,6.627,9.85,12,22,12s22-5.373,22-12S36.15,12,24,12a39.686,39.686,0,0,0-4.821.3" fill="none" stroke="currentColor" stroke-miterlimit="10"></path></g></svg>
-
-					<h4 class="uppercase text-secondary-darkest font-extrabold tracking-wide mb-4">Seriously sleek</h4>
-
-					<p class="mb-4">
-						Pellentesque consequat, turpis in dictum consequat, risus urna tempus ipsum, eu pretium diam urna vel ligula. Suspendisse potenti.
-					</p>
-
-					<p>
-						<a href="#" class="no-underline text-secondary-light text-xs tracking-wide font-extrabold uppercase">Learn more</a>
-					</p>
+					<button class="text-white border-2 border-primary bg-primary px-8 py-3 rounded-full hover:bg-transparent hover:text-primary-darker tracking-wide font-medium mb-4 md:mb-0 md:mr-4 shadow hover:shadow-none">Join us today</button>
+					<button class="text-primary-darker border-2 border-primary px-8 py-3 rounded-full hover:bg-primary hover:text-white tracking-wide font-medium">Learn more</button>
 
 				</div>
 
-				<div class="p-6 lg:w-1/3 rounded-lg border border-grey-lighter mb-8 lg:mb-0 lg:mr-8 text-center">
-					
-					<svg class="w-20 h-20 text-primary mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" transform="translate(0.5 0.5)" fill="currentColor" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-miterlimit="10" points="40,9 46,9 46,38 19,38 "></polyline> <polyline fill="none" stroke="currentColor" stroke-miterlimit="10" points="8,38 2,38 2,9 23,9 "></polyline> <path data-color="color-2" fill="none" stroke-miterlimit="10" d="M39,23H24 c-0.552,0-1-0.448-1-1V4c0-0.552,0.448-1,1-1h15c0.552,0,1,0.448,1,1v18C40,22.552,39.552,23,39,23z"></path> <path data-color="color-2" fill="none" stroke-miterlimit="10" d="M18,45H9 c-0.552,0-1-0.448-1-1V30c0-0.552,0.448-1,1-1h9c0.552,0,1,0.448,1,1v14C19,44.552,18.552,45,18,45z"></path> <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="23" y1="43" x2="29" y2="43"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="13" y1="40" x2="14" y2="40"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="30" y1="18" x2="33" y2="18"></line></g></svg>
+				<hr class="border-b-4 border-secondary max-w-2xs mx-auto mb-16">
 
-					<h4 class="uppercase text-secondary-darkest font-extrabold tracking-wide mb-4">Fully responsive</h4>
+				<div class="container mx-auto lg:flex lg:justify-between p-">
 
-					<p class="mb-4">
-						Donec sit amet laoreet odio. In vehicula, diam sed porta auctor, est ante tincidunt neque, id finibus purus metus sed tortor.
-					</p>
+					<div class="p-6 lg:w-1/3 rounded-lg border border-grey-lighter mb-8 lg:mb-0 lg:mr-8 text-center">
+						
+						<svg class="w-20 h-20 text-primary mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" transform="translate(0.5 0.5)" fill="currentColor" stroke=""><path d="M32.066,40.272C29.935,43.826,27.108,46,24,46c-6.627,0-12-9.85-12-22S17.373,2,24,2s12,9.85,12,22a39.686,39.686,0,0,1-.3,4.821" fill="none" stroke="currentColor" stroke-miterlimit="10"></path><circle cx="24" cy="24" r="4" fill="none" stroke-miterlimit="10" data-color="color-2"></circle><path d="M7.728,15.934C4.174,18.065,2,20.892,2,24c0,6.627,9.85,12,22,12s22-5.373,22-12S36.15,12,24,12a39.686,39.686,0,0,0-4.821.3" fill="none" stroke="currentColor" stroke-miterlimit="10"></path></g></svg>
 
-					<p>
-						<a href="#" class="no-underline text-secondary-light text-xs tracking-wide font-extrabold uppercase">Learn more</a>
-					</p>
+						<h4 class="uppercase text-secondary-darkest font-extrabold tracking-wide mb-4">Seriously sleek</h4>
 
-				</div>
-
-				<div class="p-6 lg:w-1/3 rounded-lg border border-grey-lighter mb-8 lg:mb-0 text-center">
-					
-					<svg class="w-20 h-20 text-primary mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" transform="translate(0.5 0.5)" fill="#adb7c2" stroke="currentColor"><polyline data-color="color-2" fill="none" stroke-miterlimit="10" points=" 16,26 12,30 16,34 "></polyline> <polyline data-color="color-2" fill="none" stroke-miterlimit="10" points=" 32,26 36,30 32,34 "></polyline> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="22" y1="38" x2="26" y2="22"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="8" y1="10" x2="10" y2="10"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="16" y1="10" x2="18" y2="10"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="32" y1="10" x2="40" y2="10"></line> <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="2" y1="16" x2="46" y2="16"></line> <rect x="2" y="4" fill="none" stroke="currentColor" stroke-miterlimit="10" width="44" height="40"></rect></g></svg>
-
-					<h4 class="uppercase text-secondary-darkest font-extrabold tracking-wide mb-4">Clean code</h4>
-
-					<p class="mb-4">
-						Quisque blandit risus in metus luctus, non scelerisque elit interdum. Nulla vitae laoreet dui, id porta velit. Curabitur at posuere lacus.
-					</p>
-
-					<p>
-						<a href="#" class="no-underline text-secondary-light text-xs tracking-wide font-extrabold uppercase">Learn more</a>
-					</p>
-
-				</div>
-
-			</div>
-
-		</section>
-
-		<section class="py-24 px-6 bg-grey-lightest border-t border-grey-lighter">
-
-			<div class="container mx-auto lg:flex items-center">
-
-				<div class="lg:w-2/5 lg:pr-24">
-
-					<h4 class="text-2xl font-bold text-secondary-darkest mb-8">Designed by professionals</h4>
-
-					<hr class="border-b-2 border-primary-light w-12 m-0 mb-8">
-
-					<p class="text-base text-grey-darker leading-medium mb-12 lg:mb-0">
-						Donec sit amet laoreet odio. In vehicula, diam sed porta auctor, est ante tincidunt neque, id finibus purus metus sed tortor. Donec eros nibh, volutpat ac nisi vitae, lacinia commodo nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-					</p>
-
-				</div>
-
-				<div class="lg:w-2/5 lg:px-6">
-
-					<img class="rounded-lg shadow-lg mb-4 lg:mb-0" src="<%= require('./images/63662.jpg') %>" alt="Desk">
-
-				</div>
-
-				<div class="lg:w-1/5 lg:pl-12">
-
-					<svg class="w-10 h-10 mb-4 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" transform="translate(0.5 0.5)" fill="currentColor" stroke="currentColor"><rect x="1" y="9" fill="none" stroke="currentColor" stroke-miterlimit="10" width="22" height="22"></rect>
-					<polyline data-color="color-2" fill="none" stroke-miterlimit="10" points="5,5 27,5 27,27 "></polyline><polyline data-color="color-2" fill="none" stroke-miterlimit="10" points="9,1 31,1 31,23 "></polyline></g></svg>
-
-					<p class="text-sm text-grey">
-						Nulla vel eros vel nulla efficitur aliquam sit amet ut turpis. Sed cursus dignissim nisl, ut dapibus augue euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada diam quis lacus condimentum, non pellentesque eros aliquet.
-					</p>
-
-				</div>
-
-			</div>
-
-		</section>
-
-		<section class="py-12 px-6 bg-gradient-bl-primary" id="cta">
-
-			<div class="container mx-auto lg:flex items-center">
-
-				<div class="lg:w-2/3 mb-8 lg:mb-0">
-
-					<h3 class="text-2xl font-mediumbold mb-2 text-white">A high-quality solution for those who want their site ready now.</h3>
-
-					<p class="text-white">
-						Quisque blandit risus in metus luctus, non scelerisque elit interdum. Nulla vitae laoreet dui, id porta velit. Curabitur at posuere lacus. Proin sed orci lectus. 
-					</p>
-
-				</div>
-
-				<div class="lg:w-1/3 lg:flex justify-end">
-
-					<button class="w-full md:w-auto text-white text-lg font-bold shadow leading-medium bg-secondary-darker px-12 py-3 rounded-full tracking-wide font-medium hover:shadow-none hover:bg-secondary-darkest">
-						Subscribe today
-						<span class="text-xs block font-normal">plans start at <b>$9</b>/month</span>
-					</button>
-
-				</div>
-
-			</div>
-
-		</section>
-
-		<section class="lg:flex bg-grey-lightest">
-
-			<div class="lg:w-1/2 lg:flex-none min-h-screen-50 lg:min-h-screen-75 bg-cover" style="background-image: url('<%= require('./images/loewe-technologies-1534770-unsplash.jpg') %>')"></div>
-
-			<div class="lg:w-1/2 lg:flex lg:flex-col lg:justify-center lg:items-start lg:px-18 p-12">
-
-				<div class="lg:max-w-sm">
-
-					<h4 class="text-2xl font-bold text-secondary-darkest mb-8">Designed by professionals</h4>
-
-					<hr class="border-b-2 border-primary-light w-12 m-0 mb-8">
-
-					<p class="text-base text-grey-darker leading-medium">
-						Donec sit amet laoreet odio. In vehicula, diam sed porta auctor, est ante tincidunt neque, id finibus purus metus sed tortor. Donec eros nibh, volutpat ac nisi vitae, lacinia commodo nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-					</p>
-
-				</div>
-
-			</div>
-
-		</section>
-
-		<section class="py-24 px-6" id="testimonials">
-
-			<h2 class="text-center font-extrabold text-3xl text-secondary-darkest max-w-lg mx-auto mb-6">Let's hear from our users</h2>
-
-			<hr class="border-b-4 border-primary max-w-2xs mx-auto mb-20">
-
-			<div class="container mx-auto lg:flex lg:justify-between">
-
-				<div class="lg:w-1/4 mr-6">
-
-					<p class="border border-secondary-lightest rounded-lg p-6 italic text-grey-dark text-base leading-medium">
-
-						"Apollo is one of the best off-the-shelf starter templates I have come across in a long time!"
-
-					</p>
-
-					<div class="flex items-center mt-4">
-
-						<img class="w-16 h-16 mr-4 shadow-inner-pic rounded-full" src="<%= require('./images/avatar1.png') %>">
+						<p class="mb-4">
+							Pellentesque consequat, turpis in dictum consequat, risus urna tempus ipsum, eu pretium diam urna vel ligula. Suspendisse potenti.
+						</p>
 
 						<p>
-							<b class="text-base">James Kim</b><br>
-							<span class="text-grey-light">Faire Shipping Systems</span>
+							<a href="#" class="no-underline text-secondary-light text-xs tracking-wide font-extrabold uppercase">Learn more</a>
+						</p>
+
+					</div>
+
+					<div class="p-6 lg:w-1/3 rounded-lg border border-grey-lighter mb-8 lg:mb-0 lg:mr-8 text-center">
+						
+						<svg class="w-20 h-20 text-primary mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" transform="translate(0.5 0.5)" fill="currentColor" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-miterlimit="10" points="40,9 46,9 46,38 19,38 "></polyline> <polyline fill="none" stroke="currentColor" stroke-miterlimit="10" points="8,38 2,38 2,9 23,9 "></polyline> <path data-color="color-2" fill="none" stroke-miterlimit="10" d="M39,23H24 c-0.552,0-1-0.448-1-1V4c0-0.552,0.448-1,1-1h15c0.552,0,1,0.448,1,1v18C40,22.552,39.552,23,39,23z"></path> <path data-color="color-2" fill="none" stroke-miterlimit="10" d="M18,45H9 c-0.552,0-1-0.448-1-1V30c0-0.552,0.448-1,1-1h9c0.552,0,1,0.448,1,1v14C19,44.552,18.552,45,18,45z"></path> <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="23" y1="43" x2="29" y2="43"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="13" y1="40" x2="14" y2="40"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="30" y1="18" x2="33" y2="18"></line></g></svg>
+
+						<h4 class="uppercase text-secondary-darkest font-extrabold tracking-wide mb-4">Fully responsive</h4>
+
+						<p class="mb-4">
+							Donec sit amet laoreet odio. In vehicula, diam sed porta auctor, est ante tincidunt neque, id finibus purus metus sed tortor.
+						</p>
+
+						<p>
+							<a href="#" class="no-underline text-secondary-light text-xs tracking-wide font-extrabold uppercase">Learn more</a>
+						</p>
+
+					</div>
+
+					<div class="p-6 lg:w-1/3 rounded-lg border border-grey-lighter mb-8 lg:mb-0 text-center">
+						
+						<svg class="w-20 h-20 text-primary mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" transform="translate(0.5 0.5)" fill="#adb7c2" stroke="currentColor"><polyline data-color="color-2" fill="none" stroke-miterlimit="10" points=" 16,26 12,30 16,34 "></polyline> <polyline data-color="color-2" fill="none" stroke-miterlimit="10" points=" 32,26 36,30 32,34 "></polyline> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="22" y1="38" x2="26" y2="22"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="8" y1="10" x2="10" y2="10"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="16" y1="10" x2="18" y2="10"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="32" y1="10" x2="40" y2="10"></line> <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="2" y1="16" x2="46" y2="16"></line> <rect x="2" y="4" fill="none" stroke="currentColor" stroke-miterlimit="10" width="44" height="40"></rect></g></svg>
+
+						<h4 class="uppercase text-secondary-darkest font-extrabold tracking-wide mb-4">Clean code</h4>
+
+						<p class="mb-4">
+							Quisque blandit risus in metus luctus, non scelerisque elit interdum. Nulla vitae laoreet dui, id porta velit. Curabitur at posuere lacus.
+						</p>
+
+						<p>
+							<a href="#" class="no-underline text-secondary-light text-xs tracking-wide font-extrabold uppercase">Learn more</a>
 						</p>
 
 					</div>
 
 				</div>
 
-				<div class="lg:w-1/4 mr-6">
+			</section>
 
-					<p class="border border-secondary-lightest rounded-lg p-6 italic text-grey-dark text-base leading-medium">
+			<section class="py-24 px-6 bg-grey-lightest border-t border-grey-lighter">
 
-						"The Apollo template enabled us to have a beautiful marketing page up and running literally within minutes; two thumbs up!"
+				<div class="container mx-auto lg:flex items-center">
 
-					</p>
+					<div class="lg:w-2/5 lg:pr-24">
 
-					<div class="flex items-center mt-4">
+						<h4 class="text-2xl font-bold text-secondary-darkest mb-8">Designed by professionals</h4>
 
-						<img class="w-16 h-16 mr-4 shadow-inner-pic rounded-full" src="<%= require('./images/avatar2.png') %>">
+						<hr class="border-b-2 border-primary-light w-12 m-0 mb-8">
 
-						<p>
-							<b class="text-base">Isabel Delore</b><br>
-							<span class="text-grey-light">Sun Systems</span>
+						<p class="text-base text-grey-darker leading-medium mb-12 lg:mb-0">
+							Donec sit amet laoreet odio. In vehicula, diam sed porta auctor, est ante tincidunt neque, id finibus purus metus sed tortor. Donec eros nibh, volutpat ac nisi vitae, lacinia commodo nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+						</p>
+
+					</div>
+
+					<div class="lg:w-2/5 lg:px-6">
+
+						<img class="rounded-lg shadow-lg mb-4 lg:mb-0" src="<%= require('./images/63662.jpg') %>" alt="Desk">
+
+					</div>
+
+					<div class="lg:w-1/5 lg:pl-12">
+
+						<svg class="w-10 h-10 mb-4 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" transform="translate(0.5 0.5)" fill="currentColor" stroke="currentColor"><rect x="1" y="9" fill="none" stroke="currentColor" stroke-miterlimit="10" width="22" height="22"></rect>
+						<polyline data-color="color-2" fill="none" stroke-miterlimit="10" points="5,5 27,5 27,27 "></polyline><polyline data-color="color-2" fill="none" stroke-miterlimit="10" points="9,1 31,1 31,23 "></polyline></g></svg>
+
+						<p class="text-sm text-grey">
+							Nulla vel eros vel nulla efficitur aliquam sit amet ut turpis. Sed cursus dignissim nisl, ut dapibus augue euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada diam quis lacus condimentum, non pellentesque eros aliquet.
 						</p>
 
 					</div>
 
 				</div>
 
-				<div class="lg:w-1/4 mr-6">
+			</section>
 
-					<p class="border border-secondary-lightest rounded-lg p-6 italic text-grey-dark text-base leading-medium">
+			<section class="py-12 px-6 bg-gradient-bl-primary" id="cta">
 
-						"Nothing but good words for this awesome little gem; keep up the excellent work!"
+				<div class="container mx-auto lg:flex items-center">
 
-					</p>
+					<div class="lg:w-2/3 mb-8 lg:mb-0">
 
-					<div class="flex items-center mt-4">
+						<h3 class="text-2xl font-mediumbold mb-2 text-white">A high-quality solution for those who want their site ready now.</h3>
 
-						<img class="w-16 h-16 mr-4 shadow-inner-pic rounded-full" src="<%= require('./images/avatar3.png') %>">
+						<p class="text-white">
+							Quisque blandit risus in metus luctus, non scelerisque elit interdum. Nulla vitae laoreet dui, id porta velit. Curabitur at posuere lacus. Proin sed orci lectus. 
+						</p>
 
-						<p>
-							<b class="text-base">Jane Alexander</b><br>
-							<span class="text-grey-light">Scribble</span>
+					</div>
+
+					<div class="lg:w-1/3 lg:flex justify-end">
+
+						<button class="w-full md:w-auto text-white text-lg font-bold shadow leading-medium bg-secondary-darker px-12 py-3 rounded-full tracking-wide font-medium hover:shadow-none hover:bg-secondary-darkest">
+							Subscribe today
+							<span class="text-xs block font-normal">plans start at <b>$9</b>/month</span>
+						</button>
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<section class="lg:flex bg-grey-lightest">
+
+				<div class="lg:w-1/2 lg:flex-none min-h-screen-50 lg:min-h-screen-75 bg-cover" style="background-image: url('<%= require('./images/loewe-technologies-1534770-unsplash.jpg') %>')"></div>
+
+				<div class="lg:w-1/2 lg:flex lg:flex-col lg:justify-center lg:items-start lg:px-18 p-12">
+
+					<div class="lg:max-w-sm">
+
+						<h4 class="text-2xl font-bold text-secondary-darkest mb-8">Designed by professionals</h4>
+
+						<hr class="border-b-2 border-primary-light w-12 m-0 mb-8">
+
+						<p class="text-base text-grey-darker leading-medium">
+							Donec sit amet laoreet odio. In vehicula, diam sed porta auctor, est ante tincidunt neque, id finibus purus metus sed tortor. Donec eros nibh, volutpat ac nisi vitae, lacinia commodo nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
 						</p>
 
 					</div>
 
 				</div>
 
-				<div class="lg:w-1/4">
+			</section>
 
-					<p class="border border-secondary-lightest rounded-lg p-6 italic text-grey-dark text-base leading-medium">
+			<section class="py-24 px-6" id="testimonials">
 
-						"Beautifully designed, professionally coded and to top it all off: FREE. Doesn't get much better then this."
+				<h2 class="text-center font-extrabold text-3xl text-secondary-darkest max-w-lg mx-auto mb-6">Let's hear from our users</h2>
 
-					</p>
+				<hr class="border-b-4 border-primary max-w-2xs mx-auto mb-20">
 
-					<div class="flex items-center mt-4">
+				<div class="container mx-auto lg:flex lg:justify-between">
 
-						<img class="w-16 h-16 mr-4 shadow-inner-pic rounded-full" src="<%= require('./images/avatar4.png') %>">
+					<div class="lg:w-1/4 mr-6">
 
-						<p>
-							<b class="text-base">Matthew Perry</b><br>
-							<span class="text-grey-light">Feed The Bear</span>
+						<p class="border border-secondary-lightest rounded-lg p-6 italic text-grey-dark text-base leading-medium">
+
+							"Apollo is one of the best off-the-shelf starter templates I have come across in a long time!"
+
 						</p>
 
-					</div>
+						<div class="flex items-center mt-4">
 
+							<img class="w-16 h-16 mr-4 shadow-inner-pic rounded-full" src="<%= require('./images/avatar1.png') %>">
 
-				</div>
-
-			</div>
-
-		</section>
-
-		<section class="py-24 px-6 bg-secondary-lightest" id="pricing">
-
-			<h2 class="text-center font-extrabold text-3xl text-secondary-darkest max-w-lg mx-auto mb-6">Apollo Plans & Prices</h2>
-
-			<hr class="border-b-4 border-primary max-w-2xs mx-auto mb-20">
-
-			<div class="container mx-auto lg:flex lg:justify-between lg:items-start lg:pl-0 lg:pr-0 relative">
-
-                <div class="lg:w-1/4 lg:mr-4 mb-8 lg:mb-0 bg-white border border-grey-lighter rounded-lg hover:shadow-lg" data-gp-container data-gp-style>
-
-                    <div class="pl-8 pr-8 pt-8 pb-4">
-
-                        <h3 class="text-2xl text-center font-semibold text-grey-darker" data-gp-text data-gp-style data-gp-dnd>Free</h3>
-
-                        <p class="text-center text-grey-light font-medium text-base mb-8" data-gp-text data-gp-style data-gp-dnd>
-                            For getting started
-                        </p>
-
-                        <p class="text-secondary-darkest font-black text-5xl text-center" data-gp-text data-gp-style data-gp-dnd>
-                            <sup class="text-lg align-super">$</sup>0
-                        </p>
-
-                        <p class="mb-8 text-center font-medium text-grey-light">monthly</p>
-
-                         <button class="w-full mt-8 py-3 px-6 border-2 border-primary text-primary-darker text-lg font-medium rounded-full hover:bg-primary hover:text-white mb-8" data-gp-style data-gp-component="button" data-gp-dnd disbaled>
-                            Sign up now
-                        </button>
-
-                    </div>
-
-                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
-                        1 GB of storage
-                    </p>
-
-                </div>
-
-                <div class="lg:w-1/4 lg:mr-4 mb-8 lg:mb-0 bg-white border border-grey-lighter rounded-lg shadow-lg relative" data-gp-container data-gp-style>
-
-                	<div class="absolute w-20 h-20 bg-primary rounded-full text-white shadow-md font-semibold tracking-wide text-center flex items-center justify-center text-xs" style="top:-18px; right: -10px">Most<br>popular</div>
-
-                    <div class="pl-8 pr-8 pt-8 pb-4">
-
-                        <h3 class="text-2xl text-center font-semibold text-secondary-darker" data-gp-text data-gp-style data-gp-dnd>Starter</h3>
-
-                        <p class="text-center text-grey-light font-medium text-base mb-8" data-gp-text data-gp-style data-gp-dnd>
-                            For early stage startups
-                        </p>
-
-                        <p class="text-secondary-darkest font-black text-5xl text-center" data-gp-text data-gp-style data-gp-dnd>
-                            <sup class="text-lg align-super">$</sup>9
-                        </p>
-
-                        <p class="mb-8 text-center font-medium text-grey-light">monthly</p>
-
-                        <button class="w-full mt-8 py-3 px-6 border-2 border-primary text-primary-darker text-lg font-medium rounded-full hover:bg-primary hover:text-white mb-8" data-gp-style data-gp-component="button" data-gp-dnd disbaled>
-                            Sign up now
-                        </button>
-
-                    </div>
-
-                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
-                        10 GB of storage
-                    </p>
-
-                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
-                        2 Users
-                    </p>
-
-                </div>
-
-                <div class="lg:w-1/4 lg:mr-4 mb-8 lg:mb-0 bg-white border border-grey-lighter rounded-lg relative hover:shadow-lg" data-gp-container data-gp-style>
-
-                    <div class="pl-8 pr-8 pt-8 pb-4">
-
-                        <h3 class="text-2xl text-center font-semibold text-secondary-darker" data-gp-text data-gp-style data-gp-dnd>Pro</h3>
-
-                        <p class="text-center text-grey-light font-medium text-base mb-8" data-gp-text data-gp-style data-gp-dnd>
-                            For growing freelancers
-                        </p>
-
-                        <p class="text-secondary-darkest font-black text-5xl text-center" data-gp-text data-gp-style data-gp-dnd>
-                            <sup class="text-lg align-super">$</sup>49
-                        </p>
-
-                        <p class="mb-8 text-center font-medium text-grey-light">monthly</p>
-
-                        <button class="w-full mt-8 py-3 px-6 border-2 border-primary text-primary-darker text-lg font-medium rounded-full hover:bg-primary hover:text-white mb-8" data-gp-style data-gp-component="button" data-gp-dnd disbaled>
-                            Sign up now
-                        </button>
-
-                    </div>
-
-                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
-                        50 GB of storage
-                    </p>
-
-                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
-                        10 Users
-                    </p>
-
-                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
-                        1 Server
-                    </p>
-
-                </div>
-
-                <div class="lg:w-1/4 bg-white border border-grey-lighter rounded-lg relative hover:shadow-lg" data-gp-container data-gp-style>
-
-                    <div class="pl-8 pr-8 pt-8 pb-4">
-
-                        <h3 class="text-2xl text-center font-semibold text-secondary-darker">Premium</h3>
-
-                        <p class="text-center text-grey-light font-medium text-base mb-8">
-                            For seasoned professionals
-                        </p>
-
-                        <p class="text-secondary-darkest font-black text-5xl text-center">
-                            <sup class="text-lg align-super">$</sup>199
-                        </p>
-
-                        <p class="mb-8 text-center font-medium text-grey-light">monthly</p>
-
-                        <button class="w-full mt-8 py-3 px-6 border-2 border-primary text-primary-darker text-lg font-medium rounded-full hover:bg-primary hover:text-white mb-8" data-gp-style data-gp-component="button" data-gp-dnd disbaled>
-                            Sign up now
-                        </button>
-
-                    </div>
-
-                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
-                        Unlimited storage
-                    </p>
-
-                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
-                        Unlimited Users
-                    </p>
-
-                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
-                        10 Servers
-                    </p>
-
-                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
-                        1 Domain name
-                    </p>
-
-                </div>
-
-            </div>
-
-		</section>
-
-		<section class="py-24 px-6 bg-gradient-l-secondary shadow-inner" id="subscribe">
-
-			<div class="container mx-auto">
-
-				<div>
-
-					<h2 class="font-extrabold text-center text-3xl text-white mb-6">Join over 5,000 subscribers and stay in the loop</h2>
-
-					<hr class="border-b-4 border-primary max-w-2xs mb-20">
-
-				</div>
-
-				<form action="">
-
-					<div class="max-w-xl mx-auto lg:flex lg:justify-between">
-
-						<div class="lg:w-1/3 lg:mr-6 mb-6 lg:mb-0">
-
-							<input type="text" class="bg-white rounded-full w-full py-4 px-6 focus:outline-none font-semibold text-grey-dark shadow" placeholder="Your name">
-
-						</div>
-
-						<div class="lg:w-1/3 lg:mr-6 mb-6 lg:mb-0">
-
-							<input type="email" class="bg-white rounded-full w-full py-4 px-6 focus:outline-none font-semibold text-grey-dark shadow" placeholder="Your email">
-
-
-						</div>
-
-						<div class="lg:w-1/3">
-
-							<button class="bg-primary text-white font-semibold rounded-full p-4 w-full shadow hover:bg-primary-dark">Keep me up to date</button>
+							<p>
+								<b class="text-base">James Kim</b><br>
+								<span class="text-grey-light">Faire Shipping Systems</span>
+							</p>
 
 						</div>
 
 					</div>
 
-				</form>
+					<div class="lg:w-1/4 mr-6">
 
-			</div>
+						<p class="border border-secondary-lightest rounded-lg p-6 italic text-grey-dark text-base leading-medium">
 
-		</section>
+							"The Apollo template enabled us to have a beautiful marketing page up and running literally within minutes; two thumbs up!"
 
-		<section class="py-12 px-6">
+						</p>
 
-			<div class="container mx-auto lg:flex">
-				
-				<div class="lg:w-2/3 text-center lg:text-left mb-6 lg:mb-0">
+						<div class="flex items-center mt-4">
 
-					&copy; 2019 All rights reserved - Apollo & css.surf
+							<img class="w-16 h-16 mr-4 shadow-inner-pic rounded-full" src="<%= require('./images/avatar2.png') %>">
+
+							<p>
+								<b class="text-base">Isabel Delore</b><br>
+								<span class="text-grey-light">Sun Systems</span>
+							</p>
+
+						</div>
+
+					</div>
+
+					<div class="lg:w-1/4 mr-6">
+
+						<p class="border border-secondary-lightest rounded-lg p-6 italic text-grey-dark text-base leading-medium">
+
+							"Nothing but good words for this awesome little gem; keep up the excellent work!"
+
+						</p>
+
+						<div class="flex items-center mt-4">
+
+							<img class="w-16 h-16 mr-4 shadow-inner-pic rounded-full" src="<%= require('./images/avatar3.png') %>">
+
+							<p>
+								<b class="text-base">Jane Alexander</b><br>
+								<span class="text-grey-light">Scribble</span>
+							</p>
+
+						</div>
+
+					</div>
+
+					<div class="lg:w-1/4">
+
+						<p class="border border-secondary-lightest rounded-lg p-6 italic text-grey-dark text-base leading-medium">
+
+							"Beautifully designed, professionally coded and to top it all off: FREE. Doesn't get much better then this."
+
+						</p>
+
+						<div class="flex items-center mt-4">
+
+							<img class="w-16 h-16 mr-4 shadow-inner-pic rounded-full" src="<%= require('./images/avatar4.png') %>">
+
+							<p>
+								<b class="text-base">Matthew Perry</b><br>
+								<span class="text-grey-light">Feed The Bear</span>
+							</p>
+
+						</div>
+
+
+					</div>
 
 				</div>
 
-				<div class="lg:w-1/3 flex justify-center lg:justify-end">
+			</section>
 
-					<a href="">
-						<svg class="w-4 h-4 text-grey-light mr-2 hover:text-grey-dark" viewBox="0 0 24 24"><g fill="currentColor"><path fill="currentColor" d="M12,0C5.4,0,0,5.4,0,12c0,5.1,3.2,9.4,7.6,11.2c-0.1-0.9-0.2-2.4,0-3.4c0.2-0.9,1.4-6,1.4-6S8.7,13,8.7,12 c0-1.7,1-2.9,2.2-2.9c1,0,1.5,0.8,1.5,1.7c0,1-0.7,2.6-1,4c-0.3,1.2,0.6,2.2,1.8,2.2c2.1,0,3.8-2.2,3.8-5.5c0-2.9-2.1-4.9-5-4.9 c-3.4,0-5.4,2.6-5.4,5.2c0,1,0.4,2.1,0.9,2.7c0.1,0.1,0.1,0.2,0.1,0.3c-0.1,0.4-0.3,1.2-0.3,1.4c-0.1,0.2-0.2,0.3-0.4,0.2 c-1.5-0.7-2.4-2.9-2.4-4.6c0-3.8,2.8-7.3,7.9-7.3c4.2,0,7.4,3,7.4,6.9c0,4.1-2.6,7.5-6.2,7.5c-1.2,0-2.4-0.6-2.8-1.4 c0,0-0.6,2.3-0.7,2.9c-0.3,1-1,2.3-1.5,3.1C9.6,23.8,10.8,24,12,24c6.6,0,12-5.4,12-12C24,5.4,18.6,0,12,0z"></path></g></svg>
-					</a>
+			<section class="py-24 px-6 bg-secondary-lightest" id="pricing">
 
-					<a href="">
-						<svg class="w-4 h-4 text-grey-light mr-2 hover:text-grey-dark" viewBox="0 0 24 24"><g fill="currentColor"><path fill="currentColor" d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"></path></g></svg>
-					</a>
+				<h2 class="text-center font-extrabold text-3xl text-secondary-darkest max-w-lg mx-auto mb-6">Apollo Plans & Prices</h2>
 
-					<a href="">
-						<svg class="w-4 h-4 text-grey-light mr-2 hover:text-grey-dark" viewBox="0 0 24 24"><g fill="currentColor"><path fill="currentColor" d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"></path></g></svg>
-					</a>
+				<hr class="border-b-4 border-primary max-w-2xs mx-auto mb-20">
 
-					<a href="">
-						<svg class="w-4 h-4 text-grey-light mr-2 hover:text-grey-dark" viewBox="0 0 24 24"><g fill="currentColor"><path fill="currentColor" d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.366,0.062,2.633,0.336,3.608,1.311 c0.975,0.975,1.249,2.242,1.311,3.608c0.058,1.265,0.07,1.645,0.07,4.849s-0.012,3.584-0.07,4.849 c-0.062,1.366-0.336,2.633-1.311,3.608c-0.975,0.975-2.242,1.249-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07 s-3.584-0.012-4.849-0.07c-1.366-0.062-2.633-0.336-3.608-1.311c-0.975-0.975-1.249-2.242-1.311-3.608 c-0.058-1.265-0.07-1.645-0.07-4.849s0.012-3.584,0.07-4.849c0.062-1.366,0.336-2.633,1.311-3.608 c0.975-0.975,2.242-1.249,3.608-1.311C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072 c-1.95,0.089-3.663,0.567-5.038,1.942C0.639,3.389,0.161,5.102,0.072,7.052C0.014,8.332,0,8.741,0,12 c0,3.259,0.014,3.668,0.072,4.948c0.089,1.95,0.567,3.663,1.942,5.038c1.375,1.375,3.088,1.853,5.038,1.942 C8.332,23.986,8.741,24,12,24s3.668-0.014,4.948-0.072c1.95-0.089,3.663-0.567,5.038-1.942c1.375-1.375,1.853-3.088,1.942-5.038 C23.986,15.668,24,15.259,24,12s-0.014-3.668-0.072-4.948c-0.089-1.95-0.567-3.663-1.942-5.038 c-1.375-1.375-3.088-1.853-5.038-1.942C15.668,0.014,15.259,0,12,0L12,0z"></path> <path data-color="color-2" d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162S8.597,18.162,12,18.162s6.162-2.759,6.162-6.162 S15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z"></path> <circle data-color="color-2" cx="18.406" cy="5.594" r="1.44"></circle></g></svg>
-					</a>
+				<div class="container mx-auto lg:flex lg:justify-between lg:items-start lg:pl-0 lg:pr-0 relative">
+
+	                <div class="lg:w-1/4 lg:mr-4 mb-8 lg:mb-0 bg-white border border-grey-lighter rounded-lg hover:shadow-lg" data-gp-container data-gp-style>
+
+	                    <div class="pl-8 pr-8 pt-8 pb-4">
+
+	                        <h3 class="text-2xl text-center font-semibold text-grey-darker" data-gp-text data-gp-style data-gp-dnd>Free</h3>
+
+	                        <p class="text-center text-grey-light font-medium text-base mb-8" data-gp-text data-gp-style data-gp-dnd>
+	                            For getting started
+	                        </p>
+
+	                        <p class="text-secondary-darkest font-black text-5xl text-center" data-gp-text data-gp-style data-gp-dnd>
+	                            <sup class="text-lg align-super">$</sup>0
+	                        </p>
+
+	                        <p class="mb-8 text-center font-medium text-grey-light">monthly</p>
+
+	                         <button class="w-full mt-8 py-3 px-6 border-2 border-primary text-primary-darker text-lg font-medium rounded-full hover:bg-primary hover:text-white mb-8" data-gp-style data-gp-component="button" data-gp-dnd disbaled>
+	                            Sign up now
+	                        </button>
+
+	                    </div>
+
+	                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
+	                        1 GB of storage
+	                    </p>
+
+	                </div>
+
+	                <div class="lg:w-1/4 lg:mr-4 mb-8 lg:mb-0 bg-white border border-grey-lighter rounded-lg shadow-lg relative" data-gp-container data-gp-style>
+
+	                	<div class="absolute w-20 h-20 bg-primary rounded-full text-white shadow-md font-semibold tracking-wide text-center flex items-center justify-center text-xs" style="top:-18px; right: -10px">Most<br>popular</div>
+
+	                    <div class="pl-8 pr-8 pt-8 pb-4">
+
+	                        <h3 class="text-2xl text-center font-semibold text-secondary-darker" data-gp-text data-gp-style data-gp-dnd>Starter</h3>
+
+	                        <p class="text-center text-grey-light font-medium text-base mb-8" data-gp-text data-gp-style data-gp-dnd>
+	                            For early stage startups
+	                        </p>
+
+	                        <p class="text-secondary-darkest font-black text-5xl text-center" data-gp-text data-gp-style data-gp-dnd>
+	                            <sup class="text-lg align-super">$</sup>9
+	                        </p>
+
+	                        <p class="mb-8 text-center font-medium text-grey-light">monthly</p>
+
+	                        <button class="w-full mt-8 py-3 px-6 border-2 border-primary text-primary-darker text-lg font-medium rounded-full hover:bg-primary hover:text-white mb-8" data-gp-style data-gp-component="button" data-gp-dnd disbaled>
+	                            Sign up now
+	                        </button>
+
+	                    </div>
+
+	                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
+	                        10 GB of storage
+	                    </p>
+
+	                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
+	                        2 Users
+	                    </p>
+
+	                </div>
+
+	                <div class="lg:w-1/4 lg:mr-4 mb-8 lg:mb-0 bg-white border border-grey-lighter rounded-lg relative hover:shadow-lg" data-gp-container data-gp-style>
+
+	                    <div class="pl-8 pr-8 pt-8 pb-4">
+
+	                        <h3 class="text-2xl text-center font-semibold text-secondary-darker" data-gp-text data-gp-style data-gp-dnd>Pro</h3>
+
+	                        <p class="text-center text-grey-light font-medium text-base mb-8" data-gp-text data-gp-style data-gp-dnd>
+	                            For growing freelancers
+	                        </p>
+
+	                        <p class="text-secondary-darkest font-black text-5xl text-center" data-gp-text data-gp-style data-gp-dnd>
+	                            <sup class="text-lg align-super">$</sup>49
+	                        </p>
+
+	                        <p class="mb-8 text-center font-medium text-grey-light">monthly</p>
+
+	                        <button class="w-full mt-8 py-3 px-6 border-2 border-primary text-primary-darker text-lg font-medium rounded-full hover:bg-primary hover:text-white mb-8" data-gp-style data-gp-component="button" data-gp-dnd disbaled>
+	                            Sign up now
+	                        </button>
+
+	                    </div>
+
+	                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
+	                        50 GB of storage
+	                    </p>
+
+	                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
+	                        10 Users
+	                    </p>
+
+	                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
+	                        1 Server
+	                    </p>
+
+	                </div>
+
+	                <div class="lg:w-1/4 bg-white border border-grey-lighter rounded-lg relative hover:shadow-lg" data-gp-container data-gp-style>
+
+	                    <div class="pl-8 pr-8 pt-8 pb-4">
+
+	                        <h3 class="text-2xl text-center font-semibold text-secondary-darker">Premium</h3>
+
+	                        <p class="text-center text-grey-light font-medium text-base mb-8">
+	                            For seasoned professionals
+	                        </p>
+
+	                        <p class="text-secondary-darkest font-black text-5xl text-center">
+	                            <sup class="text-lg align-super">$</sup>199
+	                        </p>
+
+	                        <p class="mb-8 text-center font-medium text-grey-light">monthly</p>
+
+	                        <button class="w-full mt-8 py-3 px-6 border-2 border-primary text-primary-darker text-lg font-medium rounded-full hover:bg-primary hover:text-white mb-8" data-gp-style data-gp-component="button" data-gp-dnd disbaled>
+	                            Sign up now
+	                        </button>
+
+	                    </div>
+
+	                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
+	                        Unlimited storage
+	                    </p>
+
+	                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
+	                        Unlimited Users
+	                    </p>
+
+	                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
+	                        10 Servers
+	                    </p>
+
+	                    <p class="border-t border-grey-lighter text-center p-3 text-grey-dark text-base font-bold">
+	                        1 Domain name
+	                    </p>
+
+	                </div>
+
+	            </div>
+
+			</section>
+
+			<section class="py-24 px-6 bg-gradient-l-secondary shadow-inner" id="subscribe">
+
+				<div class="container mx-auto">
+
+					<div>
+
+						<h2 class="font-extrabold text-center text-3xl text-white mb-6">Join over 5,000 subscribers and stay in the loop</h2>
+
+						<hr class="border-b-4 border-primary max-w-2xs mb-20">
+
+					</div>
+
+					<form action="">
+
+						<div class="max-w-xl mx-auto lg:flex lg:justify-between">
+
+							<div class="lg:w-1/3 lg:mr-6 mb-6 lg:mb-0">
+
+								<input type="text" class="bg-white rounded-full w-full py-4 px-6 focus:outline-none font-semibold text-grey-dark shadow" placeholder="Your name">
+
+							</div>
+
+							<div class="lg:w-1/3 lg:mr-6 mb-6 lg:mb-0">
+
+								<input type="email" class="bg-white rounded-full w-full py-4 px-6 focus:outline-none font-semibold text-grey-dark shadow" placeholder="Your email">
+
+
+							</div>
+
+							<div class="lg:w-1/3">
+
+								<button class="bg-primary text-white font-semibold rounded-full p-4 w-full shadow hover:bg-primary-dark">Keep me up to date</button>
+
+							</div>
+
+						</div>
+
+					</form>
 
 				</div>
 
-			</div>
+			</section>
 
-		</section>
+			<section class="py-12 px-6">
+
+				<div class="container mx-auto lg:flex">
+					
+					<div class="lg:w-2/3 text-center lg:text-left mb-6 lg:mb-0">
+
+						&copy; 2019 All rights reserved - Apollo & css.surf
+
+					</div>
+
+					<div class="lg:w-1/3 flex justify-center lg:justify-end">
+
+						<a href="">
+							<svg class="w-4 h-4 text-grey-light mr-2 hover:text-grey-dark" viewBox="0 0 24 24"><g fill="currentColor"><path fill="currentColor" d="M12,0C5.4,0,0,5.4,0,12c0,5.1,3.2,9.4,7.6,11.2c-0.1-0.9-0.2-2.4,0-3.4c0.2-0.9,1.4-6,1.4-6S8.7,13,8.7,12 c0-1.7,1-2.9,2.2-2.9c1,0,1.5,0.8,1.5,1.7c0,1-0.7,2.6-1,4c-0.3,1.2,0.6,2.2,1.8,2.2c2.1,0,3.8-2.2,3.8-5.5c0-2.9-2.1-4.9-5-4.9 c-3.4,0-5.4,2.6-5.4,5.2c0,1,0.4,2.1,0.9,2.7c0.1,0.1,0.1,0.2,0.1,0.3c-0.1,0.4-0.3,1.2-0.3,1.4c-0.1,0.2-0.2,0.3-0.4,0.2 c-1.5-0.7-2.4-2.9-2.4-4.6c0-3.8,2.8-7.3,7.9-7.3c4.2,0,7.4,3,7.4,6.9c0,4.1-2.6,7.5-6.2,7.5c-1.2,0-2.4-0.6-2.8-1.4 c0,0-0.6,2.3-0.7,2.9c-0.3,1-1,2.3-1.5,3.1C9.6,23.8,10.8,24,12,24c6.6,0,12-5.4,12-12C24,5.4,18.6,0,12,0z"></path></g></svg>
+						</a>
+
+						<a href="">
+							<svg class="w-4 h-4 text-grey-light mr-2 hover:text-grey-dark" viewBox="0 0 24 24"><g fill="currentColor"><path fill="currentColor" d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"></path></g></svg>
+						</a>
+
+						<a href="">
+							<svg class="w-4 h-4 text-grey-light mr-2 hover:text-grey-dark" viewBox="0 0 24 24"><g fill="currentColor"><path fill="currentColor" d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"></path></g></svg>
+						</a>
+
+						<a href="">
+							<svg class="w-4 h-4 text-grey-light mr-2 hover:text-grey-dark" viewBox="0 0 24 24"><g fill="currentColor"><path fill="currentColor" d="M12,2.162c3.204,0,3.584,0.012,4.849,0.07c1.366,0.062,2.633,0.336,3.608,1.311 c0.975,0.975,1.249,2.242,1.311,3.608c0.058,1.265,0.07,1.645,0.07,4.849s-0.012,3.584-0.07,4.849 c-0.062,1.366-0.336,2.633-1.311,3.608c-0.975,0.975-2.242,1.249-3.608,1.311c-1.265,0.058-1.645,0.07-4.849,0.07 s-3.584-0.012-4.849-0.07c-1.366-0.062-2.633-0.336-3.608-1.311c-0.975-0.975-1.249-2.242-1.311-3.608 c-0.058-1.265-0.07-1.645-0.07-4.849s0.012-3.584,0.07-4.849c0.062-1.366,0.336-2.633,1.311-3.608 c0.975-0.975,2.242-1.249,3.608-1.311C8.416,2.174,8.796,2.162,12,2.162 M12,0C8.741,0,8.332,0.014,7.052,0.072 c-1.95,0.089-3.663,0.567-5.038,1.942C0.639,3.389,0.161,5.102,0.072,7.052C0.014,8.332,0,8.741,0,12 c0,3.259,0.014,3.668,0.072,4.948c0.089,1.95,0.567,3.663,1.942,5.038c1.375,1.375,3.088,1.853,5.038,1.942 C8.332,23.986,8.741,24,12,24s3.668-0.014,4.948-0.072c1.95-0.089,3.663-0.567,5.038-1.942c1.375-1.375,1.853-3.088,1.942-5.038 C23.986,15.668,24,15.259,24,12s-0.014-3.668-0.072-4.948c-0.089-1.95-0.567-3.663-1.942-5.038 c-1.375-1.375-3.088-1.853-5.038-1.942C15.668,0.014,15.259,0,12,0L12,0z"></path> <path data-color="color-2" d="M12,5.838c-3.403,0-6.162,2.759-6.162,6.162S8.597,18.162,12,18.162s6.162-2.759,6.162-6.162 S15.403,5.838,12,5.838z M12,16c-2.209,0-4-1.791-4-4s1.791-4,4-4s4,1.791,4,4S14.209,16,12,16z"></path> <circle data-color="color-2" cx="18.406" cy="5.594" r="1.44"></circle></g></svg>
+						</a>
+
+					</div>
+
+				</div>
+
+			</section>
+
+		</div>
 
 	</body>
 </html>
