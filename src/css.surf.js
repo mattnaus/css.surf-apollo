@@ -8,10 +8,10 @@ import SmoothScroll from 'smooth-scroll';
 AOS.init();
 
 let spy = new Gumshoe('#navList a');
-let scroll = new SmoothScroll('#navList a[href*="#"]');
-
-
-require('./js/navbar.js');
+let scroll = new SmoothScroll('#navList a[href*="#"], #backToTop');
+let scroll2 = new SmoothScroll('#leaveCover', {
+	speed: 1500
+});
 
 let sideNav = document.getElementById("sideNav"),
 	page = document.getElementById("page");

@@ -77,17 +77,17 @@
 			</g></svg>
 		</button>
 
-		<div id="page">
+		<div id="page" class="overflow-hidden">
 		
-			<section class="relative h-screen bg-cover z-10" style="background-image: url('<%= require('./images/134758.jpg') %>');" id="cover">
+			<section class="relative h-screen bg-cover bg-fixed z-10" style="background-image: url('<%= require('./images/134758.jpg') %>');" id="cover">
 
-				<div class="absolute pin-x pin-y" style="z-index: -1; background-color: rgba(0, 0, 0, 0.55)"></div>
+				<div class="absolute pin-x pin-y" style="z-index: -1; background-color: rgba(0, 0, 0, 0.20)"></div>
 
 				<div class="h-screen flex flex-col justify-center">
 
 					<div class="flex flex-col items-start container mx-auto">
 
-						<div class="lg:w-1/2 px-12 py-12 mx-4 bg-white-trans-10 rounded-lg border border-white-trans-20 shadow-md" data-aos="fade-right">
+						<div class="lg:w-1/2 px-8 py-8 mx-4 bg-white-trans-10 border border-grey-darkest rounded-lg shadow-lg" style="background-color: rgba(0, 0, 0, 0.55)" data-aos="fade-left">
 
 							<h1 class="text-2xl font-black tracking-wide text-white no-underline text-primary mb-4 leading-tight">Apollo</h1>
 								
@@ -107,23 +107,27 @@
 
 				<div class="absolute pin-b pin-l pin-r flex justify-center">
 
-					<button class="text-white-trans-90 stroke-current animated fadeInDown infinite slower">
+					<a class="text-white stroke-current animated fadeInDown infinite slower hover:text-primary" href="#about" data-scroll id="leaveCover">
 						<svg viewBox="0 0 32 32" width="32" height="32"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="currentColor" stroke="currentColor"><polygon fill="none" stroke="currentColor" stroke-miterlimit="10" points="16,30 27,18 20,18 20,7 12,7 12,18 5,18 "></polygon> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="20" y1="2" x2="12" y2="2"></line></g></svg>
-					</button>
+					</a>
 					
 				</div>
+
+				<a href="#cover" class="fixed bg-primary text-white p-1 z-50 w-8 h-8 shadow rounded" style="bottom: 10px; right: 10px;" id="backToTop">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" transform="translate(0.5 0.5)" fill="currentColor" stroke="currentColor"><polygon fill="none" stroke="currentColor" stroke-miterlimit="10" points="12,2 4,12 9,12 9,19 15,19 15,12 20,12 "></polygon> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="9" y1="23" x2="15" y2="23"></line></g></svg>
+				</a>
 
 			</section>
 
 			<section class="py-24 px-6 bg-white" id="about">
 
-				<h2 class="text-center font-extrabold text-3xl text-secondary-darkest max-w-lg mx-auto mb-10" data-aos="slide-left">Apollo is a simple, but extremely powerful one-page template to get you started</h2>
+				<h2 class="text-center font-extrabold text-3xl text-secondary-darkest max-w-lg mx-auto mb-10" data-aos="fade-up">Apollo is a simple, but extremely powerful one-page template to get you started</h2>
 
-				<p class="text-center text-lg max-w-lg mx-auto leading-loose mb-10" data-aos="slide-right">
+				<p class="text-center text-lg max-w-lg mx-auto leading-loose mb-10" data-aos="fade-up">
 					Pellentesque eget nisl sit amet odio maximus porta sit amet id odio. Aliquam placerat turpis vitae orci semper molestie. Duis vitae tellus a urna sodales fringilla id a nunc. Maecenas mattis tempus molestie. Cras in ipsum sed mi pulvinar consequat ut sit amet mauris.
 				</p>
 
-				<div class="flex flex-col items-center md:flex-row md:justify-center md:items-center mb-16" data-aos="slide-left">
+				<div class="flex flex-col items-center md:flex-row md:justify-center md:items-center mb-16" data-aos="fade-up">
 
 					<button class="text-white border-2 border-primary bg-primary px-8 py-3 rounded-full hover:bg-transparent hover:text-primary-darker tracking-wide font-medium mb-4 md:mb-0 md:mr-4 shadow hover:shadow-none">Join us today</button>
 					<button class="text-primary-darker border-2 border-primary px-8 py-3 rounded-full hover:bg-primary hover:text-white tracking-wide font-medium">Learn more</button>
@@ -134,7 +138,7 @@
 
 				<div class="container mx-auto lg:flex lg:justify-between p-">
 
-					<div class="p-6 lg:w-1/3 rounded-lg border border-grey-lighter mb-8 lg:mb-0 lg:mr-8 text-center">
+					<div class="p-6 lg:w-1/3 rounded-lg border border-grey-lighter mb-8 lg:mb-0 lg:mr-8 text-center" data-aos="fade-up">
 						
 						<svg class="w-20 h-20 text-primary mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" transform="translate(0.5 0.5)" fill="currentColor" stroke=""><path d="M32.066,40.272C29.935,43.826,27.108,46,24,46c-6.627,0-12-9.85-12-22S17.373,2,24,2s12,9.85,12,22a39.686,39.686,0,0,1-.3,4.821" fill="none" stroke="currentColor" stroke-miterlimit="10"></path><circle cx="24" cy="24" r="4" fill="none" stroke-miterlimit="10" data-color="color-2"></circle><path d="M7.728,15.934C4.174,18.065,2,20.892,2,24c0,6.627,9.85,12,22,12s22-5.373,22-12S36.15,12,24,12a39.686,39.686,0,0,0-4.821.3" fill="none" stroke="currentColor" stroke-miterlimit="10"></path></g></svg>
 
@@ -150,7 +154,7 @@
 
 					</div>
 
-					<div class="p-6 lg:w-1/3 rounded-lg border border-grey-lighter mb-8 lg:mb-0 lg:mr-8 text-center">
+					<div class="p-6 lg:w-1/3 rounded-lg border border-grey-lighter mb-8 lg:mb-0 lg:mr-8 text-center" data-aos="fade-up">
 						
 						<svg class="w-20 h-20 text-primary mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" transform="translate(0.5 0.5)" fill="currentColor" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-miterlimit="10" points="40,9 46,9 46,38 19,38 "></polyline> <polyline fill="none" stroke="currentColor" stroke-miterlimit="10" points="8,38 2,38 2,9 23,9 "></polyline> <path data-color="color-2" fill="none" stroke-miterlimit="10" d="M39,23H24 c-0.552,0-1-0.448-1-1V4c0-0.552,0.448-1,1-1h15c0.552,0,1,0.448,1,1v18C40,22.552,39.552,23,39,23z"></path> <path data-color="color-2" fill="none" stroke-miterlimit="10" d="M18,45H9 c-0.552,0-1-0.448-1-1V30c0-0.552,0.448-1,1-1h9c0.552,0,1,0.448,1,1v14C19,44.552,18.552,45,18,45z"></path> <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="23" y1="43" x2="29" y2="43"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="13" y1="40" x2="14" y2="40"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="30" y1="18" x2="33" y2="18"></line></g></svg>
 
@@ -166,7 +170,7 @@
 
 					</div>
 
-					<div class="p-6 lg:w-1/3 rounded-lg border border-grey-lighter mb-8 lg:mb-0 text-center">
+					<div class="p-6 lg:w-1/3 rounded-lg border border-grey-lighter mb-8 lg:mb-0 text-center" data-aos="fade-up">
 						
 						<svg class="w-20 h-20 text-primary mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" transform="translate(0.5 0.5)" fill="#adb7c2" stroke="currentColor"><polyline data-color="color-2" fill="none" stroke-miterlimit="10" points=" 16,26 12,30 16,34 "></polyline> <polyline data-color="color-2" fill="none" stroke-miterlimit="10" points=" 32,26 36,30 32,34 "></polyline> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="22" y1="38" x2="26" y2="22"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="8" y1="10" x2="10" y2="10"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="16" y1="10" x2="18" y2="10"></line> <line data-color="color-2" fill="none" stroke-miterlimit="10" x1="32" y1="10" x2="40" y2="10"></line> <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="2" y1="16" x2="46" y2="16"></line> <rect x="2" y="4" fill="none" stroke="currentColor" stroke-miterlimit="10" width="44" height="40"></rect></g></svg>
 
@@ -190,7 +194,7 @@
 
 				<div class="container mx-auto lg:flex items-center">
 
-					<div class="lg:w-2/5 lg:pr-24">
+					<div class="lg:w-2/5 lg:pr-24" data-aos="slide-right">
 
 						<h4 class="text-2xl font-bold text-secondary-darkest mb-8">Designed by professionals</h4>
 
@@ -202,13 +206,13 @@
 
 					</div>
 
-					<div class="lg:w-2/5 lg:px-6">
+					<div class="lg:w-2/5 lg:px-6" data-aos="slide-up">
 
 						<img class="rounded-lg shadow-lg mb-4 lg:mb-0" src="<%= require('./images/63662.jpg') %>" alt="Desk">
 
 					</div>
 
-					<div class="lg:w-1/5 lg:pl-12">
+					<div class="lg:w-1/5 lg:pl-12" data-aos="slide-left">
 
 						<svg class="w-10 h-10 mb-4 text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" transform="translate(0.5 0.5)" fill="currentColor" stroke="currentColor"><rect x="1" y="9" fill="none" stroke="currentColor" stroke-miterlimit="10" width="22" height="22"></rect>
 						<polyline data-color="color-2" fill="none" stroke-miterlimit="10" points="5,5 27,5 27,27 "></polyline><polyline data-color="color-2" fill="none" stroke-miterlimit="10" points="9,1 31,1 31,23 "></polyline></g></svg>
@@ -256,7 +260,7 @@
 
 				<div class="lg:w-1/2 lg:flex lg:flex-col lg:justify-center lg:items-start lg:px-18 p-12">
 
-					<div class="lg:max-w-sm">
+					<div class="lg:max-w-sm" data-aos="slide-left">
 
 						<h4 class="text-2xl font-bold text-secondary-darkest mb-8">Designed by professionals</h4>
 
@@ -276,7 +280,7 @@
 
 				<div class="lg:w-1/2 lg:flex lg:flex-col lg:justify-center lg:items-end lg:px-18 p-12">
 
-					<div class="lg:max-w-sm">
+					<div class="lg:max-w-sm" data-aos="slide-right">
 
 						<h4 class="text-2xl font-bold text-white mb-8">Coded by space monkeys</h4>
 
@@ -302,7 +306,7 @@
 
 				<div class="container mx-auto lg:flex lg:justify-between">
 
-					<div class="lg:w-1/4 mr-6">
+					<div class="lg:w-1/4 mr-6" data-aos="zoom-in">
 
 						<p class="border border-secondary-lightest rounded-lg p-6 italic text-grey-dark text-base leading-medium">
 
@@ -323,7 +327,7 @@
 
 					</div>
 
-					<div class="lg:w-1/4 mr-6">
+					<div class="lg:w-1/4 mr-6" data-aos="zoom-in">
 
 						<p class="border border-secondary-lightest rounded-lg p-6 italic text-grey-dark text-base leading-medium">
 
@@ -344,7 +348,7 @@
 
 					</div>
 
-					<div class="lg:w-1/4 mr-6">
+					<div class="lg:w-1/4 mr-6" data-aos="zoom-in">
 
 						<p class="border border-secondary-lightest rounded-lg p-6 italic text-grey-dark text-base leading-medium">
 
@@ -365,7 +369,7 @@
 
 					</div>
 
-					<div class="lg:w-1/4">
+					<div class="lg:w-1/4" data-aos="zoom-in">
 
 						<p class="border border-secondary-lightest rounded-lg p-6 italic text-grey-dark text-base leading-medium">
 
@@ -399,7 +403,7 @@
 
 				<div class="container mx-auto lg:flex lg:justify-between lg:items-start lg:pl-0 lg:pr-0 relative">
 
-	                <div class="lg:w-1/4 lg:mr-4 mb-8 lg:mb-0 bg-white border border-grey-lighter rounded-lg hover:shadow-lg">
+	                <div class="lg:w-1/4 lg:mr-4 mb-8 lg:mb-0 bg-white border border-grey-lighter rounded-lg hover:shadow-lg" data-aos="slide-up">
 
 	                    <div class="pl-8 pr-8 pt-8 pb-4">
 
@@ -427,7 +431,7 @@
 
 	                </div>
 
-	                <div class="lg:w-1/4 lg:mr-4 mb-8 lg:mb-0 bg-white border border-grey-lighter rounded-lg relative hover:shadow-lg">
+	                <div class="lg:w-1/4 lg:mr-4 mb-8 lg:mb-0 bg-white border border-grey-lighter rounded-lg relative hover:shadow-lg" data-aos="slide-up">
 
 	                    <div class="pl-8 pr-8 pt-8 pb-4">
 
@@ -459,7 +463,7 @@
 
 	                </div>
 
-	                <div class="lg:w-1/4 lg:mr-4 mb-8 lg:mb-0 bg-white border border-grey-lighter rounded-lg relative shadow-lg">
+	                <div class="lg:w-1/4 lg:mr-4 mb-8 lg:mb-0 bg-white border border-grey-lighter rounded-lg relative shadow-lg" data-aos="slide-up">
 
 	                	<div class="absolute w-20 h-20 bg-primary rounded-full text-white shadow-md font-semibold tracking-wide text-center flex items-center justify-center text-xs" style="top:-18px; right: -10px">Most<br>popular</div>
 
@@ -497,7 +501,7 @@
 
 	                </div>
 
-	                <div class="lg:w-1/4 bg-white border border-grey-lighter rounded-lg relative hover:shadow-lg">
+	                <div class="lg:w-1/4 bg-white border border-grey-lighter rounded-lg relative hover:shadow-lg" data-aos="slide-up">
 
 	                    <div class="pl-8 pr-8 pt-8 pb-4">
 
