@@ -9,7 +9,7 @@ AOS.init();
 
 let spy = new Gumshoe('#navList a');
 let scroll = new SmoothScroll('#navList a[href*="#"], #backToTop');
-let scroll2 = new SmoothScroll('#leaveCover', {
+let scroll2 = new SmoothScroll('#leaveCover, #learnMore', {
 	speed: 1500
 });
 
