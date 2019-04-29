@@ -36,7 +36,7 @@ body {
 /**  sideNav stuff  **/
 
 #sideNav ul a {
-	@apply text-sm pb-4 border-b border-white-trans-20 text-grey-lighter block no-underline font-semibold mb-4 tracking-wide;
+	@apply text-sm pb-4 text-grey-lighter block no-underline font-semibold mb-4 tracking-wide;
 }
 
 #sideNav ul a span {
