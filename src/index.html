@@ -37,7 +37,7 @@
 				</li>
 				
 				<li>
-					<a href="#"><span></span>Contact</a>
+					<a href="#" id="contactLink"><span></span>Contact</a>
 				</li>
 
 			</ul>
@@ -624,33 +624,37 @@
 
 		</div>
 
-		<div id="contactModal" class="fixed pin bg-primary z-90 justify-center items-center hidden">
+		<div id="contactModal" class="fixed pin z-90 hidden animated">
 
-			<button class="absolute text-white w-10 h-10" style="top: 20px; right: 20px">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" transform="translate(0.5 0.5)" fill="currentColor" stroke="currentColor"><line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="27" y1="5" x2="5" y2="27"></line> <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="27" y1="27" x2="5" y2="5"></line></g></svg>
-			</button>
+			<div class="absolute pin bg-primary justify-center items-center flex">
 
-			<div class="w-full max-w-sm p-6">
+				<button class="absolute text-white w-10 h-10" style="top: 20px; right: 20px" id="buttonCloseModal">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" transform="translate(0.5 0.5)" fill="currentColor" stroke="currentColor"><line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="27" y1="5" x2="5" y2="27"></line> <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="27" y1="27" x2="5" y2="5"></line></g></svg>
+				</button>
 
-				<h3 class="text-xl md:text-3xl lg:text-4xl font-bold text-white mb-2 tracking-wide leading-tight">We are excited.</h3>
+				<div class="w-full max-w-sm p-6">
 
-				<p class="text-white mb-12 text-base md:text-lg font-medium">
-					And we'd love to hear from you. Please use the form below and we'll be in touch asap.
-				</p>
+					<h3 class="text-xl md:text-3xl lg:text-4xl font-bold text-white mb-2 tracking-wide leading-tight">We are excited.</h3>
 
-				<hr class="border-b-4 border-secondary max-w-2xs ml-0 mb-16">
+					<p class="text-white mb-12 text-base md:text-lg font-medium">
+						And we'd love to hear from you. Please use the form below and we'll be in touch asap.
+					</p>
 
-				<form action="">
+					<hr class="border-b-4 border-secondary max-w-2xs ml-0 mb-16">
 
-					<input type="text" class="bg-white rounded-lg w-full py-4 px-6 focus:outline-none font-semibold text-grey-dark shadow mb-4" placeholder="Your name">
+					<form action="">
 
-					<input type="email" class="bg-white rounded-lg w-full py-4 px-6 focus:outline-none font-semibold text-grey-dark shadow mb-4" placeholder="Your email">
+						<input type="text" class="bg-white rounded-lg w-full py-4 px-6 focus:outline-none font-semibold text-grey-dark shadow mb-4" placeholder="Your name">
 
-					<textarea class="bg-white rounded-lg w-full py-4 px-6 focus:outline-none font-semibold text-grey-dark shadow mb-4" rows="6" placeholder="Your message"></textarea>
+						<input type="email" class="bg-white rounded-lg w-full py-4 px-6 focus:outline-none font-semibold text-grey-dark shadow mb-4" placeholder="Your email">
 
-					<button class="bg-secondary rounded-lg w-full py-4 px-6 text-white font-semibold shadow border-b-2 border-secondary-darker" type="submit">Pigeons away</button>
+						<textarea class="bg-white rounded-lg w-full py-4 px-6 focus:outline-none font-semibold text-grey-dark shadow mb-4" rows="6" placeholder="Your message"></textarea>
 
-				</form>
+						<button class="bg-secondary rounded-lg w-full py-4 px-6 text-white font-semibold shadow border-b-2 border-secondary-darker" type="submit">Pigeons away</button>
+
+					</form>
+
+				</div>
 
 			</div>
 

@@ -22,3 +22,39 @@ document.getElementById('menuToggle').addEventListener('click', () => {
 	page.classList.toggle('navOpen');
 
 });
+
+let contactLink = document.getElementById('contactLink'),
+	contactModal = document.getElementById('contactModal'),
+	buttonCloseModal = document.getElementById('buttonCloseModal');
+
+contactLink.addEventListener('click', () => {
+
+	contactModal.classList.remove('hidden');
+	contactModal.classList.add('fadeIn');
+
+	contactModal.addEventListener('animationend', afterAnimation);
+
+});
+
+buttonCloseModal.addEventListener('click', () => {
+
+	contactModal.classList.add('fadeOut');
+
+	contactModal.addEventListener('animationend', afterAnimation);
+
+});
+
+function afterAnimation () {
+
+	if ( this.classList.contains('fadeIn') ) {
+
+		this.classList.remove('fadeIn');
+
+	} else {
+
+		this.classList.add('hidden');
+		this.classList.remove('fadeOut');
+
+	}
+
+}
